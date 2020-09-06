@@ -2,7 +2,7 @@
 
 npm i minify -g
 apt-get update
-apt-get install moreutils
+apt-get -y install moreutils
 
 cd /app/
 
