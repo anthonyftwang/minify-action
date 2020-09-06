@@ -1,0 +1,9 @@
+name: 'Minify Action'
+description: 'Minify js, html, and css files pushed to a branch'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: "minimize-2"
+  color: "red"
