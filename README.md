@@ -1,5 +1,5 @@
 # Minify Action
-Github Action to minify js, html, and css files pushed to a branch, using the [Minify](https://github.com/coderaiser/minify) package.
+Github Action to minify js, css, and html files pushed to a branch, using the [Minify](https://github.com/coderaiser/minify) package.
 ### Usage
 Here the target branch is `foo`. You need to checkout your repository and set up Node.js so the minify-action job can run. Then, you can auto-commit the files to the repository if desired.
 ```yaml
@@ -20,8 +20,8 @@ jobs:
         with:
           node-version: '12.x'
 
-      - name: Minify js, html, and css
-        uses: anthonyftwang/minify-action@master
+      - name: Minify js, css, and html
+        uses: anthonyftwang/minify-action@v1
 
       # Auto commit to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
