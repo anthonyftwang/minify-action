@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
 npm i minify -g
+apt-get update
 apt-get install moreutils
 
 cd /app/
