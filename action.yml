@@ -1,5 +1,14 @@
 name: 'Minify Action'
 description: 'Minify js, css, and html files pushed to a branch'
+
+inputs:
+  directory:
+    description: "File to minify, (By default it minifies in all routes)"
+    required: false
+  output:
+    description: "Path where the minified files will be saved (By default the minified files will be saved in the original file path)"
+    required: false
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
