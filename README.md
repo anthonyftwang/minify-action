@@ -23,7 +23,10 @@ jobs:
 
       - name: Minify Action
         uses: anthonyftwang/minify-action@v1
-
+        with:
+          directory: 'src/component.js' (OPTIONAL)
+          output: 'minify/src/' (OPTIONAL)
+          
       # Auto-commit to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
