@@ -18,6 +18,7 @@ minify_file(){
     fi
     filename="${basename%.*}"
     output_path="${output}${filename}.min.${extension}"
+    rm ${output_path}
     minify ${directory} | sponge ${output_path}
     echo "minify ${directory} > ${output_path}"
 }
