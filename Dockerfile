@@ -1,4 +1,4 @@
-FROM node:15.7.0
+FROM node:19-bullseye-slim
 
 COPY entrypoint.sh /entrypoint.sh
 
